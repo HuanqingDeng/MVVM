@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <script>
+        // 适配问题 不同的手机1rem 单位是 宽度10分之一，1rem=html fontSize
+        (function (w) {
+            // window是js 全局，dom document只是其中的一部分， 导航location.href navigator lbs经纬度，陀螺仪-
+            // -存储localStorage
+            let s = w.document;
+            let r = s.documentElement;
+            // 宽度的十分之一
+            let cloWidth = r.clientWidth / 10;
+            // console.log(r);
+            // console.log(s);
+            console.log(cloWidth);
+            r.style.fontSize = cloWidth + 'px';
+        })(window)
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- width=device-width
+    iphone8/x 375pt 物理大小
+    html 37.5px 百分比关系 10rem=设备宽度
+    iphone8 750px
+    iphone8 plus 414pt
+    41.4px html font-size
+     -->
+     
+    <!-- 移动端试配 百分比, flex 布局,  em  相对于自身的font-size 
+  rem html font-size 
+  em 16px 24px  24/16 旧    px换算 rem html 就可以
+  px2rem  -->
+</body>
+
+</html>
